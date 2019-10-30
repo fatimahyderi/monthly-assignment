@@ -10,7 +10,7 @@
 		$age = $_POST['age'];
 		$sql_update = 'UPDATE user SET firstname="'.$fname.'", lastname="'.$lname.'", email="'.$email.'", age='.$age.' WHERE id = '.$id;
 		if(mysqli_query($conn, $sql_update)){
-			header('location: http://localhost/practice/nf/crud/');
+			header('location: http://localhost/fatimahyderi/2mon-assign/crud/');
 			exit();
 		} else{
 			echo mysqli_error($conn);
